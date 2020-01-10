@@ -1,0 +1,111 @@
+.box{
+		width: 100%;
+		height: auto;
+		/*padding: 40px 60px;*/
+		}
+
+	.section1{
+		background-image: url("back1.jpg");
+		opacity: 95%;
+		/*background-size: cover;*/
+		background-repeat: no-repeat;
+		height:auto;
+	}
+
+p{
+	font-size: 20px;
+}
+
+h1 {
+  font-size: 5vmax;
+  color: white;
+}
+
+@keyframes typewriter {
+  0%, 100% {
+    width: 0;
+  }
+  20%, 80% {
+    width:100%;
+  }
+}
+
+@keyframes caret {
+  0%, 100% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+}
+
+.text_1 {
+  overflow: hidden;
+  white-space: nowrap;
+  animation: typewriter;
+  display: inline-block;
+  position: relative;
+  animation-duration: 20s;
+  animation-timing-function: steps(40, end);
+  animation-iteration-count: infinite;
+}
+
+
+.text_1::after {
+  content: " | ";
+  color: white;
+  position: absolute;
+  right: 0;
+  animation: caret infinite;
+  animation-duration: 1s;
+  animation-timing-function: steps(1, end);
+}
+
+h2{
+	font-size: 4vmax;
+}
+
+p{
+	font-size: 2vmax;
+}
+
+
+/*
+.split {
+  height: 100%;
+  width: 50%;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  overflow-x: hidden;
+  padding-top: 20px;
+}
+
+
+.left {
+  left: 0;
+  background-color: black;
+}
+
+
+.right {
+  right: 0;
+  background-color: red;
+}
+
+
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(50%, -50%);
+  text-align: center;
+}*/
+
+/* Style the image inside the centered container, if needed */
+/*.centered img {
+  width: 150px;
+  border-radius: 50%;
+}*/
+
+/*#title{font-family: 'Lobster', cursive;;}*/
